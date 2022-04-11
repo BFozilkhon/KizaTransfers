@@ -1,5 +1,7 @@
 import Genric from "../component/Generic";
 import { Login } from "../component/Login";
+import Receiver from "../component/Receiver";
+import { Register } from "../component/Register";
 import Home from "../pages/Home";
 
 export const data = [
@@ -16,9 +18,15 @@ export const data = [
     child: [],
   },
   {
-    id: 1,
+    id: 3,
     path: "/signup",
-    element: <Genric />,
+    element: <Register />,
+    child: [],
+  },
+  {
+    id: 4,
+    path: "/receiver",
+    element: <Receiver />,
     child: [],
   },
 ];
