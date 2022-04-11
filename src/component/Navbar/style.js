@@ -7,7 +7,7 @@ export const Wrap = styled.div`
   width: 90%;
   height: 100px;
   margin: auto;
-  background: #212121;
+  /* background: #212121; */
 `;
 
 Wrap.Btn = styled.div`

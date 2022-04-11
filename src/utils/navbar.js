@@ -1,4 +1,5 @@
 import Genric from "../component/Generic";
+import { Login } from "../component/Login";
 import Home from "../pages/Home";
 
 export const data = [
@@ -11,7 +12,7 @@ export const data = [
   {
     id: 2,
     path: "/login",
-    element: <Genric />,
+    element: <Login />,
     child: [],
   },
   {
