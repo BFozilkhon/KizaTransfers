@@ -1,4 +1,3 @@
-import Genric from "../component/Generic";
 import { Login } from "../component/Login";
 import Receiver from "../component/Receiver";
 import { Register } from "../component/Register";
