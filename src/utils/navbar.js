@@ -1,5 +1,4 @@
 import Genric from "../component/Generic";
-import { Register } from "../component/Register";
 import Home from "../pages/Home";
 
 export const data = [
@@ -18,7 +17,7 @@ export const data = [
   {
     id: 1,
     path: "/signup",
-    element: <Register />,
+    element: <Genric />,
     child: [],
   },
 ];

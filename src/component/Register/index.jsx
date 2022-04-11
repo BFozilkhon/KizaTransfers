@@ -6,7 +6,7 @@ import canada from '../../assets/imgs/canada.png'
 import uzb from '../../assets/imgs/uzb.jpg'
 import chinese from '../../assets/imgs/chinese.png'
 import korean from '../../assets/imgs/korean.jpg'
-import Button from '../Generic/Button'
+
 
 export const Register = () => {
     const [state, setState] = useState('canada')
