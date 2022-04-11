@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #212121;
-  height: 100vh;
+  padding-bottom: 100px;
 `;
 
 Container.Header = styled.div`
