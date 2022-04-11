@@ -15,6 +15,11 @@ Container.Header = styled.div`
   font-size: 38px;
   color: #535353;
   margin-bottom: 30px;
+  @media (max-width: 768px) {font-size: 28px};
+  @media (max-width: 500px) {font-size: 24px};
+  @media (max-width: 450px) {font-size: 22px};
+  @media (max-width: 400px) {font-size: 20px};
+  @media (max-width: 380px) {font-size: 18px};
 `;
 
 Container.Input = styled.input`
@@ -35,15 +40,18 @@ Container.Input = styled.input`
     color: #000000;
     padding-bottom: 14px;
   }
-  :focus {
-    padding-bottom: 5px;
-  }
+  :focus {padding-bottom: 5px;}
+  @media (max-width: 768px) {font-size: 18px;::placeholder {font-size: 18px;}};
+  @media (max-width: 550px) {font-size: 16px; ::placeholder {font-size: 16px;}};
+  @media (max-width: 480px) {font-size: 13px;::placeholder {font-size: 13px;}};
+  @media (max-width: 400px) {font-size: 10px;::placeholder {font-size: 10px;}};
 `;
 
 export const Wrap = styled.div`
   display: flex;
   width: 100%;
   margin-top: 25px;
+  @media (max-width: 900px) {flex-direction: column};
 `;
 
 export const Box = styled.div`
@@ -63,7 +71,7 @@ Box.ItemA = styled.div`
   font-weight: 700;
   font-size: 15px;
   text-decoration-line: underline;
-  margin-top: 15px;
+  margin: 15px 0;
 `;
 
 export const Flexing = styled.div`
@@ -85,6 +93,10 @@ Flexing.Input = styled.input`
   :focus {
     padding-bottom: 5px;
   }
+  @media (max-width: 768px) {font-size: 18px};
+  @media (max-width: 550px) {font-size: 16px; margin: 7px 0};
+  @media (max-width: 480px) {font-size: 13px};
+  @media (max-width: 400px) {font-size: 10px; };
 `;
 
 Flexing.Header = styled.div`
@@ -93,6 +105,11 @@ Flexing.Header = styled.div`
   font-size: 25px;
   color: #000000;
   margin-right: 8px;
+  @media (max-width: 768px) {font-size: 24px};
+  @media (max-width: 650px) {font-size: 22px};
+  @media (max-width: 550px) {font-size: 20px;};
+  @media (max-width: 480px) {font-size: 18px};
+
 `;
 
 Flexing.Img = styled.div`
@@ -100,4 +117,7 @@ Flexing.Img = styled.div`
   background-size: 100% 100%;
   width: 38px;
   height: 23px;
+  @media (max-width: 768px) { width: 32px; height: 18px;};
+  @media (max-width: 650px) {width: 28px; height: 15px;};
+  @media (max-width: 550px) {width: 24px; height: 12px;}};
 `;

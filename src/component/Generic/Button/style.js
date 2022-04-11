@@ -19,4 +19,19 @@ export const Container = styled.div`
   :active {
     transform: scale(0.98);
   }
+  @media (max-width: 768px) {
+    width: ${({ width }) => (width ? `${width}` : "200px")};
+  height: ${({ height }) => (height ? `${height}` : "36px")};
+  };
+  @media (max-width: 550px) {
+  width: ${({ width }) => (width ? `${width}` : "160px")};
+  height: ${({ height }) => (height ? `${height}` : "30px")};
+  font-size: 12px;
+
+};
+  @media (max-width: 480px) {
+  width: ${({ width }) => (width ? `${width}` : "120px")};
+  height: ${({ height }) => (height ? `${height}` : "26px")};
+  font-size: 10px;
+};
 `;
