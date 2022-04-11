@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../Generic/Button";
 import Navbar from "../Navbar";
 import { Box, Container, Flexing, Main__container, Wrap } from "./style";
 import canada from '../../assets/imgs/canada.png'
