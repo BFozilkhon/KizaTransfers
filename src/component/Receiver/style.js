@@ -1,20 +1,10 @@
 import styled from "styled-components";
 import canada from "../../assets/imgs/canada.png";
 
-export const Main__container = styled.div`
-    width: 100%;
-    background-color: #212121;
-    padding-bottom: 200px;
-    @media (max-width: 776px) {
-      padding-bottom: 190px;
-    }
-    @media (max-width: 500px) {
-      padding-bottom: 170px;
-    }
-`
+
 
 export const Container = styled.div`
-  width: 75%;
+  width: 100%;
   padding: 21px 31.25px 27px 31.25px;
   background: white;
   margin: auto;

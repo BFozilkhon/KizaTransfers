@@ -15,7 +15,9 @@ const Ratese = () => {
 
       <Card flex>
         <Cards><Cards.Input /></Cards>
-        <Cards><Card.Btn>Apply</Card.Btn></Cards>
+        <Cards>
+          <Card.Btn onClick={() => alert('success appyled!!')}>Apply</Card.Btn>
+          </Cards>
       </Card>
 
       <div>
@@ -44,7 +46,7 @@ const Ratese = () => {
         and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
         took a galley of type and scrambled it to<b> make a type</b> </Card.Text>
 
-      <Cards end><Card.Btn small>Prepare Transaction</Card.Btn></Cards>
+      <Cards end><Card.Btn onClick={() => alert('saved!!')} small>Prepare Transaction</Card.Btn></Cards>
 
       <Card.Text>1 Lorem Ipsum is simply dummyto make a type text of the printin gtext of the printing</Card.Text>
       <Card.Text>2 Lorem Ipsum is simply dummyto make a type</Card.Text>
