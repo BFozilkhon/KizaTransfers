@@ -300,7 +300,7 @@
     `
 
     Form.Button = styled.div`
-        background: #777;
+        background: #f11e1e;
         border-radius: 48px;
         text-align: center;
         color: #f3f3f3;

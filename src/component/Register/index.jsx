@@ -5,6 +5,7 @@ import canada from '../../assets/imgs/canada.png'
 import uzb from '../../assets/imgs/uzb.jpg'
 import chinese from '../../assets/imgs/chinese.png'
 import korean from '../../assets/imgs/korean.jpg'
+import { Link } from 'react-router-dom'
 
 
 export const Register = () => {
@@ -21,7 +22,7 @@ export const Register = () => {
                 <Wrapper.Image src={register} />
             </Wrapper.Left>
             <Wrapper.Right>
-                <Wrapper.Close>+</Wrapper.Close>
+                <Link to={'/home'}><Wrapper.Close>+</Wrapper.Close></Link>
                 <Wrapper.Title>First, we'll need to collect the essentials</Wrapper.Title>
                 <Form>
                     <Form.Title>EMAIL ADDRESS</Form.Title>
@@ -75,8 +76,8 @@ export const Register = () => {
                     you acknowledge your information will be used, disclosed and transferred, including
                     international transfers as described in our <Form.Bold>Privacy Notice.</Form.Bold> 
                 </Form.Terms>
-                <Form.Button>NEXT</Form.Button>
-                <Form.Have__a__profile>Have a profile? <Form.Bold> Log in</Form.Bold> </Form.Have__a__profile>
+                <Form.Button onClick={()=> alert('register done')}>Sign Up</Form.Button>
+                <Form.Have__a__profile>Have a profile?<Link to={'/login'}><Form.Bold> Log in</Form.Bold></Link> </Form.Have__a__profile>
                 <Form.Standard>1. Standard message rates and data charges from your carrier may apply.</Form.Standard>
             </Wrapper.Right>
         </Wrapper>

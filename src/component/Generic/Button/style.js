@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: #f11e1e;
+  background: ${({bg}) => bg ? `${bg}`: '#f11e1e'};
   border-radius: 48px;
   text-align: center;
   color: #f3f3f3;
@@ -16,6 +16,7 @@ export const Container = styled.div`
   margin-left: auto;
   width: ${({ width }) => (width ? `${width}` : "280px")};
   height: ${({ height }) => (height ? `${height}` : "44px")};
+  margin-top: ${({mt}) => mt && `${mt}px`};
   :active {
     transform: scale(0.98);
   }

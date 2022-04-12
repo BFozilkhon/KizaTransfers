@@ -1,11 +1,15 @@
 import React from "react";
-import Button from "../../Generic/Button";
+import { Link } from "react-router-dom";
 import { Container, Close } from "./style";
 
 export const SummaryCard = () => {
   return (
     <Container>
-      <Container.Close><Close /></Container.Close>
+      <Container.Close>
+        <Link to={'/home'}>
+      <Close />
+      </Link>
+      </Container.Close>
       <Container.Name>Summary</Container.Name>
       <Container.Title>Almost finished! Just review the information below and submit your transaction.</Container.Title>
     </Container>

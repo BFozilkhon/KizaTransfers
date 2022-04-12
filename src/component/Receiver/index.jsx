@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar";
 import { Box, Container, Flexing, Main__container, Wrap } from "./style";
 import canada from '../../assets/imgs/canada.png'
 import uzb from '../../assets/imgs/uzb.jpg'
 import chinese from '../../assets/imgs/chinese.png'
 import korean from '../../assets/imgs/korean.jpg'
+import { Link } from "react-router-dom";
 
 export const Receiver = () => {
   const [state, setState] = useState('canada')
@@ -13,8 +13,6 @@ export const Receiver = () => {
     setState({[e.target.name]: e.target.value})
   }
   return (
-    <Main__container>
-    <Navbar />
     <Container>
       <Container.Header>Receive Information</Container.Header>
       <Wrap>
@@ -78,9 +76,10 @@ export const Receiver = () => {
           </Flexing>
         </Box>
       </Wrap>
+      <Link to={'/payment'}>
       <Container.Button> Next </Container.Button>
+      </Link>
     </Container>
-    </Main__container>
   );
 };
 

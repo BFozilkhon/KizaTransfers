@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../component/Navbar'
 import Opener from '../../component/Summary/Opener'
 import Rates from '../../component/Summary/Rates'
 import Reciever from '../../component/Summary/Reciever'
@@ -8,7 +7,6 @@ import { Container, Wrap } from "./style";
 const Summary = () => {
   return (
     <Container>
-      <Navbar />
       <Wrap>
         <Opener />
         <Rates />

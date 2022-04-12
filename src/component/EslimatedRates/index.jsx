@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import inter from '../../assets/imgs/inter.png'
 import Button from "../Generic/Button";
 import { Box, Container, Flexing, Wrap } from "./style";
@@ -69,6 +70,9 @@ export const Rates = () => {
         <b>TOTAL COST</b>
         <b>100 CAD</b>
       </Flexing>
+      <Link to={'/receiver'}>
+      <Button children={"Next"} />
+      </Link>
     </Container>
   );
 };

@@ -1,13 +1,14 @@
 import React from 'react'
 import { Container, Form, Wrapper } from './style'
 import img from '../../assets/imgs/login.jpg'
+import { Link } from 'react-router-dom'
 
 export const Login = () => {
   return (
     <Container>
         <Wrapper>
             <Wrapper.Img>
-                <Wrapper.Close>+</Wrapper.Close>
+               <Link to={'/home'}><Wrapper.Close>+</Wrapper.Close></Link> 
                 <Wrapper.Image src={img} />
             </Wrapper.Img>
             <Wrapper.Container>
@@ -28,9 +29,9 @@ export const Login = () => {
                     <Form.Checkbox type='checkbox' />
                     <Form.Remember__my__email>Remember my email address</Form.Remember__my__email>
                 </Form>
-                <Wrapper.Button>Log in</Wrapper.Button>
+                <Wrapper.Button onClick={()=> alert('success log in')}>Log in</Wrapper.Button>
                 <Wrapper.Forgot__my__password>Forgot Password?</Wrapper.Forgot__my__password>
-                <Wrapper.Dont__have__account>Don't have an account ? <Wrapper.Signup>Sign Up</Wrapper.Signup> </Wrapper.Dont__have__account>
+                <Wrapper.Dont__have__account>Don't have an account ? <Link to={'/signup'}> <Wrapper.Signup>Sign Up</Wrapper.Signup></Link> </Wrapper.Dont__have__account>
             </Wrapper.Container>
         </Wrapper>
     </Container>

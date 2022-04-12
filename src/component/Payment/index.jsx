@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Generic/Button";
 import { Container, Flexing } from "./style";
 
@@ -25,7 +26,9 @@ export const Payment = () => {
         <Flexing.ItemBlack>Email: </Flexing.ItemBlack>
         <Flexing.ItemBlack>TK@gmail.com</Flexing.ItemBlack>
       </Flexing>
+      <Link to={'/summary'}>
       <Button children={"Next"} />
+      </Link>
     </Container>
   );
 };
