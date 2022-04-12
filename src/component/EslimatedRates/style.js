@@ -75,8 +75,25 @@ Box.ItemA = styled.div`
 `;
 
 export const Flexing = styled.div`
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: ${({ center }) => center && 'center'};
+  align-items: ${({ center }) => !center && 'center'};
+  border-top: ${({ border }) => border && '1px solid silver'} ;
+  justify-content: ${({ border }) => border && 'space-between'} ;
+  padding-top: ${({ border }) => border && '20px'} ;
+  width: ${({ border }) => border ? '70%' : '100%'} ;
+  .img{width:50px;  }
+  font-size: 14px;
+  margin-top: ${({ mt }) => mt && '40px'};
+  @media (max-width: 900px) {
+    flex-direction: ${({ column }) => column && 'column'};
+  };
+  @media (max-width: 768px) {font-size: 18px; img{display: none}};
+  @media (max-width: 550px) {font-size: 12px; margin: 7px 0};
+  @media (max-width: 480px) {font-size: 12px};
+  @media (max-width: 400px) {font-size: 10px; };
+
 `;
 
 Flexing.Input = styled.input`
@@ -119,5 +136,53 @@ Flexing.Img = styled.div`
   height: 23px;
   @media (max-width: 768px) { width: 32px; height: 18px;};
   @media (max-width: 650px) {width: 28px; height: 15px;};
-  @media (max-width: 550px) {width: 24px; height: 12px;}};
-`;
+  @media (max-width: 550px) {width: 24px; height: 12px;};
+`
+Flexing.Text = styled.div`
+width: 100%;
+margin-top: ${({ inputs }) => !inputs && '20px'};
+text-align: ${({ end }) => end && 'end'};
+padding-right: ${({ end }) => end && '10px'};
+font-family: 'Inter';
+font-weight: 300;
+font-size: 24px;
+b{font-size: 20px}
+ @media (max-width: 768px) {font-size: 20px;b{font-size: 18px}};
+  @media (max-width: 650px) {font-size: 18px; b{font-size: 16px}};
+  @media (max-width: 550px) {font-size: 16px; b{font-size: 14px}};
+`
+Flexing.Test = styled.div`
+display: flex;
+margin-bottom: 10px;
+font-size: ${({ end }) => end ? '17px' : '12px'};
+margin-top: ${({ top }) => top && '30px'};
+justify-content: end;
+  @media (max-width: 1000px) {font-size: ${({ end }) => end ? '15px' : '10px'}};
+  @media (max-width: 500px) {font-size: ${({ end }) => end ? '14px' : '9px'}};
+  @media (max-width: 400px) {font-size: ${({ end }) => end ? '12px' : '8px'}};
+`
+
+Flexing.Column = styled.div`
+width: 100%;
+margin-top: 20px;
+display: flex;
+
+margin-right: ${({ mr }) => mr && '75px'};
+flex-direction: column;
+input{
+  width: 16px;
+  }
+  @media (max-width: 910px) {margin-right: ${({ mr }) => mr && '65px'};};
+  @media (max-width: 768px) {margin-right: ${({ mr }) => mr && '25px'};};
+  @media (max-width: 768px) {margin-right: ${({ mr }) => mr && '40px 25px 0 0'};};
+`
+Flexing.Blue = styled.div`
+width: 70%;
+text-align: start;
+font-family: 'Inter';
+font-weight: 400;
+margin: 10px 0;
+font-size: ${({ small }) => small ? '13px' : '16px'};
+line-height: 16px;
+color: #6391CE;
+`

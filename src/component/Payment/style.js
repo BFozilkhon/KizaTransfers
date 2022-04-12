@@ -13,6 +13,11 @@ Container.Header = styled.div`
   font-weight: 300;
   font-size: 38px;
   color: #535353;
+  @media (max-width: 768px) {font-size: 28px};
+  @media (max-width: 500px) {font-size: 24px};
+  @media (max-width: 450px) {font-size: 22px};
+  @media (max-width: 400px) {font-size: 20px};
+  @media (max-width: 380px) {font-size: 18px};
 `;
 
 Container.Input = styled.input`
@@ -37,12 +42,17 @@ Container.Input = styled.input`
   :focus {
     padding-bottom: 5px;
   }
+  @media (max-width: 768px) {font-size: 18px;::placeholder {font-size: 18px;}};
+  @media (max-width: 550px) {font-size: 16px; ::placeholder {font-size: 16px;}};
+  @media (max-width: 480px) {font-size: 13px;::placeholder {font-size: 13px;}};
+  @media (max-width: 400px) {font-size: 10px;::placeholder {font-size: 10px;}};
 `;
 
 export const Flexing = styled.div`
   display: flex;
   align-items: center;
   margin: 20px 0px;
+  @media (max-width: 768px) {margin: 10px 0px;};
 `;
 
 Flexing.ItemWhite = styled.div`
@@ -52,6 +62,10 @@ Flexing.ItemWhite = styled.div`
   line-height: 16px;
   color: #000000;
   margin-right: 20px;
+  @media (max-width: 500px) {font-size: 14px};
+  @media (max-width: 450px) {font-size: 13px};
+  @media (max-width: 400px) {font-size: 12px};
+  @media (max-width: 380px) {font-size: 11px};
 `;
 
 Flexing.ItemBlack = styled.div`
@@ -59,4 +73,8 @@ Flexing.ItemBlack = styled.div`
   font-weight: 700;
   font-size: 20px;
   color: #000000;
+  @media (max-width: 500px) {font-size: 16px};
+  @media (max-width: 450px) {font-size: 14px};
+  @media (max-width: 400px) {font-size: 13px};
+  @media (max-width: 380px) {font-size: 12px};
 `;

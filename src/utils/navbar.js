@@ -1,7 +1,7 @@
 import { Login } from "../component/Login";
 import Receiver from "../component/Receiver";
 import { Register } from "../component/Register";
-import Home from "../pages/Home";
+import Home from "../pages/EslimatedRates";
 
 export const data = [
   {
